@@ -6,7 +6,12 @@ namespace Open_Lab_04._01
     {
         public bool DoubleLetters(string str)
         {
-            throw new NotImplementedException();
+            for (var j = 0; j < str.Length - 1; j++)
+                if (str[j] == str[j + 1])
+                {
+                    return true;
+                }
+            return false;
         }
     }
 }
